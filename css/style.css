@@ -27,10 +27,7 @@ html{
 .header__nav{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
- 
-  
-    
+    align-items: center;   
 }
 .nav__menu{
         padding: 10px;
@@ -42,6 +39,10 @@ html{
         text-align: center;
 
 }
+.nav__menu--color::first-letter{
+    color: grey;
+    text-decoration: underline;
+}
 .nav__menu:hover{
         padding: 10px;
         background-color: rgba(188, 185, 190, 0.274);
@@ -49,4 +50,15 @@ html{
         border-radius:10px;
         z-index: 2;  
         box-shadow: 10px solid black;
-   
+}
+
+.nav__menu--color{
+    padding: 10px;
+    background-color: rgba(188, 185, 190, 0.274);
+    border: 1px snow rgb(219, 209, 209);
+    border-radius:10px;
+    z-index: 2;  
+    box-shadow: 10px solid black;
+    color: grey;
+    text-decoration: none;
+}
